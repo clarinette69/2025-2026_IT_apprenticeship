@@ -1,0 +1,15 @@
+How to update GitHub repo with local folder content
+===================================================
+
+1. Open Command Prompt or PowerShell.
+2. Go to the folder:
+   cd "G:\My Drive\StudiesRepo"
+
+3. Check the current repo status:
+   git status
+
+4. Add all new or modified files, commit, and push in one command:
+   git add . && git commit -m "Update: added/modified documents" && git push origin main
+
+5. Done! 🎉
+Internet connection required ;P
