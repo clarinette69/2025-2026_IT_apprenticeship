@@ -1,0 +1,4 @@
+ESt-ce que çA marche ou bien quoi ??
+je suis pas si sûre
+Ceci est un fichierr d'exercie
+pour l'introduction au power shell
