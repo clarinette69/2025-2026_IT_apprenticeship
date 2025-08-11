@@ -1,0 +1,55 @@
+-- Sélectionne toutes les personnes dont le nom commence par 'Du'
+SELECT * FROM t_personne WHERE nom LIKE 'Du%';
+
+-- Sélectionne toutes les personnes dont le prénom ne commence pas par 'A'
+SELECT * FROM t_personne WHERE prenom NOT LIKE 'A%';
+
+-- Sélectionne toutes les entreprises du secteur de la technologie
+SELECT * FROM t_entreprise WHERE secteur_activite = 'Technologie';
+
+-- Sélectionne tous les mails qui ne suivent pas le format standard 'quelqu'un@domaine.com'
+SELECT * FROM t_mail WHERE Adresse NOT REGEXP '^[a-z]+@[a-z]+\\.com$';
+
+-- Sélectionne toutes les nationalités où la langue officielle est le français ou l'espagnol
+SELECT * FROM t_nationalite WHERE langue_officielle IN ('Français', 'Espagnol');
+
+-- Sélectionne toutes les nationalités qui ne sont ni la France ni l'Espagne
+SELECT * FROM t_nationalite WHERE pays NOT IN ('France', 'Espagne');
+
+-- Sélectionne toutes les personnes nées entre le 1er janvier 1980 et le 31 décembre 1990
+SELECT * FROM t_personne WHERE date_naissance BETWEEN '1980-01-01' AND '1990-12-31';
+
+-- Sélectionne toutes les adresses où le code postal n'est pas renseigné
+SELECT * FROM t_adresse WHERE code_postal IS NULL;
+
+-- Récupère toutes les entrées de la table t_personne et leurs adresses correspondantes, si elles existent.
+SELECT *
+FROM t_personne AS A
+LEFT JOIN t_adresse AS B ON A.id_personne = B.id_adresse;
+
+-- Récupère uniquement les entrées correspondantes entre les tables t_personne et t_adresse.
+SELECT *
+FROM t_personne AS A
+INNER JOIN t_adresse AS B ON A.id_personne = B.id_adresse;
+
+-- Récupère toutes les entrées de la table t_adresse et les personnes correspondantes, si elles existent.
+SELECT *
+FROM t_personne AS A
+RIGHT JOIN t_adresse AS B ON A.id_personne = B.id_adresse;
+
+
+-- Récupère toutes les personnes qui n'ont pas d'adresse associée.
+SELECT *
+FROM t_personne AS A
+LEFT JOIN t_adresse AS B ON A.id_personne = B.id_adresse
+WHERE B.id_adresse IS NULL;
+
+-- Combine les résultats des entrées de la table t_personne avec ou sans adresses et inversement.
+SELECT *
+SELECT *
+FROM t_personne AS A
+LEFT JOIN t_adresse AS B ON A.id_personne = B.id_adresse
+UNION
+SELECT *
+FROM t_personne AS A
+RIGHT JOIN t_adresse AS B ON A.id_personne = B.id_adresse;

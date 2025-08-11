@@ -1,0 +1,28 @@
+Afficher le contenu d'un répertoire :
+ls
+
+Retourner le répertoire dans lequel vous êtes actuellement :
+pwd
+
+Vous déplacez dans un répertoire :
+cd chemin/vers/le/répertoire
+
+Afficher le contenu d'un fichier à l'écran :
+cat nom_du_fichier
+
+Localiser un fichier :
+find /chemin/de/recherche -name nom_du_fichier
+
+Supprimer un fichier :
+rm nom_du_fichier
+
+Supprimer un répertoire :
+rm -r nom_du_répertoire
+
+Déplacer un fichier :
+mv chemin/source/du_fichier chemin/destination
+
+Copier un fichier :
+cp chemin/source/du_fichier chemin/destination
+
+

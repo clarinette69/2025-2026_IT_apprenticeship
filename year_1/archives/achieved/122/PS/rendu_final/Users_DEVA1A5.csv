@@ -1,0 +1,32 @@
+sep= ";"
+FirstName;Initial;Lastname;Username;Email;Department;Password;Jobtitle;Company;OU;ExpirationDate
+Léa;D;Dupont;ldupont;ldupont@example.com;_Finance;AP#b9bDE2fegQ3;Directeur;EPSIC;"OU=_Finance,DC=ad,DC=private";04.06.2027
+Julien;M;Moreau;jmoreau;jmoreau@example.com;_Finance;k7qCo9KD&hm#Ye;Coordinateur;EPSIC;"OU=_Finance,DC=ad,DC=private";10.11.2025
+Amélie;B;Bernard;abernard;abernard@example.com;_Finance;aGX#FuF2e8kV^i;Manager;EPSIC;"OU=_Finance,DC=ad,DC=private";08.12.2025
+Maxime;L;Leroy;mleroy;mleroy@example.com;_Finance;aGX#FuF2e8kV^i;Manager;EPSIC;"OU=_Finance,DC=ad,DC=private";16.07.2025
+Clara;M;Martin;cmartin;cmartin@example.com;_Finance;b8y3*sP$^pqFN$;Coordinateur;EPSIC;"OU=_Finance,DC=ad,DC=private";14.11.2027
+Vincent;P;Petit;vpetit;vpetit@example.com;_Finance;u9PU&Kj2b49vce;Analyste;EPSIC;"OU=_Finance,DC=ad,DC=private";24.12.2024
+Sophie;D;Dubois;sdubois;sdubois@example.com;_Finance;xxL6^T&gX9jmFv;Directeur;EPSIC;"OU=_Finance,DC=ad,DC=private";14.03.2026
+Nicolas;R;Rousseau;nrousseau;nrousseau@example.com;_Finance;##!e56dXRg7Svy;Coordinateur;EPSIC;"OU=_Finance,DC=ad,DC=private";08.11.2027
+Isabelle;L;Lefebvre;ilefebvre;ilefebvre@example.com;_Finance;a&tpN$EK2ZLv2Q;Manager;EPSIC;"OU=_Finance,DC=ad,DC=private";03.09.2025
+Marc;M;Mercier;mmercier;mmercier@example.com;_Finance;nS5r6fLuw!GccS;Superviseur;EPSIC;"OU=_Finance,DC=ad,DC=private";24.11.2025
+Emma;B;Blanchard;eblanchard;eblanchard@example.com;_IT;#!9PvuYH5nV5W8;Ingénieur;EPSIC;"OU=_IT,DC=ad,DC=private";01.10.2025
+Lucas;D;Durand;ldurand;ldurand@example.com;_IT;E*7b2tuQ*%#S33;Spécialiste ;EPSIC;"OU=_IT,DC=ad,DC=private";29.06.2026
+Zoé;F;Fontaine;zfontaine;zfontaine@example.com;_IT;7eFKq#!jsxGtEn;Manager;EPSIC;"OU=_IT,DC=ad,DC=private";05.11.2027
+Théo;G;Girard;tgirard;tgirard@example.com;_IT;pw5^9f&7voxTZ&;Directeur;EPSIC;"OU=_IT,DC=ad,DC=private";07.02.2025
+Charlotte;H;Henry;chenry;chenry@example.com;_IT;*j$NN9&As&ZQf6;Superviseur;EPSIC;"OU=_IT,DC=ad,DC=private";20.06.2024
+Gabriel;J;Julien;gjulien;gjulien@example.com;_IT;gL@UYfB*CA5Ctv;Representant de service;EPSIC;"OU=_IT,DC=ad,DC=private";26.06.2026
+Alice;L;Lambert;alambert;alambert@example.com;_IT;86jryJpLSLy5?5@o;Développeur de logiciels;EPSIC;"OU=_IT,DC=ad,DC=private";14.09.2025
+Raphaël;M;Morin;rmorin;rmorin@example.com;_IT;&ifJQbyCnF@zSj3i;Analyste en cybersécurité ;EPSIC;"OU=_IT,DC=ad,DC=private";28.07.2025
+Chloé;N;Nguyen;cnguyen;cnguyen@example.com;_IT;8zk&!aDLN6#ihj?Q;Administrateur de base de données;EPSIC;"OU=_IT,DC=ad,DC=private";14.09.2027
+Louis;P;Poirier;lpoirier;lpoirier@example.com;_IT;gL@UYfB*CA5Ctv;Architecte de systèmes d’information ;EPSIC;"OU=_IT,DC=ad,DC=private";03.05.2027
+Inès;R;Richard;irichard;irichard@example.com;_Marketing;$Rpx#HdbA@E57L?$;Responsable du marketing digital;EPSIC;"OU=_Marketing,DC=ad,DC=private";04.09.2025
+Jules;S;Simon;jsimon;jsimon@example.com;_Marketing;k#qJ$pG6aGxQ76fs;Stratège de contenu;EPSIC;"OU=_Marketing,DC=ad,DC=private";30.10.2026
+Louise;T;Thomas;lthomas;lthomas@example.com;_Marketing;RcF4hH&bzg7E#A!F;Spécialiste SEO;EPSIC;"OU=_Marketing,DC=ad,DC=private";21.11.2024
+Hugo;V;Vasseur;hvasseur;hvasseur@example.com;_Marketing;Th$6zryX4s3yef53;Responsable de marque;EPSIC;"OU=_Marketing,DC=ad,DC=private";01.04.2024
+Jade;C;Chevalier;jchevalier;jchevalier@example.com;_Marketing;LPt&nhyPL38?&q!@;Analyste d'études de marché;EPSIC;"OU=_Marketing,DC=ad,DC=private";27.03.2024
+Mathis;R;Robin;mrobin;mrobin@example.com;_RH;AJxgoh73$K#e9?K!;Spécialiste de l'acquisition de talents;EPSIC;"OU=_RH,DC=ad,DC=private";26.10.2026
+Léna;M;Meyer;lmeyer;lmeyer@example.com;_RH;MiN??4qDrJxe9Y&a;Responsable RH;EPSIC;"OU=_RH,DC=ad,DC=private";30.01.2027
+Ethan;R;Roy;eroy;eroy@example.com;_RH;qM8GH?ioocFqa4Jn;Spécialiste de la paie;EPSIC;"OU=_RH,DC=ad,DC=private";01.02.2028
+Anna;D;Dufour;adufour;adufour@example.com;_RH;dscqHHJ6YDas&kRF;Responsable des relations avec les employés;EPSIC;"OU=_RH,DC=ad,DC=private";27.07.2026
+Samuel;G;Garnier;sgarnier;sgarnier@example.com;_RH;y5$9?YLmfJpi8z?q;Coordinateur de la formation et du développement;EPSIC;"OU=_RH,DC=ad,DC=private";07.08.2026
