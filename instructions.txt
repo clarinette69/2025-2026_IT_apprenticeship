@@ -9,7 +9,7 @@ How to update GitHub repo with local folder content
    git status
 
 4. Add all new or modified files, commit, and push in one command:
-   git add . && git commit -m "Update: added/modified documents" && git push origin main
+   git add . && git commit -m "Update: added archives documents and folder structure for each modules of the year 1/2 " && git push origin main
 
 5. Done! 🎉
 Internet connection required ;P
