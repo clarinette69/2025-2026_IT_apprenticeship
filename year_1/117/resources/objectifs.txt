@@ -1,0 +1,13 @@
+Tâche 1
+… connaître les câbles utilisés pour connecter un PC sur un SWITCH
+… citer un avantage du SWITCH par rapport au HUB pour mettre des PC en
+ réseau
+… utiliser les commandes DOS « ipconfig » et « ipconfig /all »
+… utiliser la commande « ping »
+… visualiser le transfert des paquets lorsque le « ping » s’exécute
+Tâche 2
+… connecter PC au SWITCH avec un câble console pour modifier la
+ configuration du SWITCH
+… visualiser la configuration d’un switch Cisco avec la commande
+ « show running-configuration »
+… utiliser le ? et le tab

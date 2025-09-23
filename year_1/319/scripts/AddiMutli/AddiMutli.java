@@ -30,6 +30,7 @@ public class AddiMutli {
     int produit = a * b;// enregistre le resultat de la multiplication des deux chiffres dans la variable "produit". Seul les int sont accepté
     System.out.println("La somme de a plus b vaut: "+somme);//Affiche le text entre "" et le contenu de la variable somme fait un retour à la ligne
     System.out.println("Le produit de a par b vaut: "+produit);//Affiche le text entre "" et le contenu de la variable produit et fait un retour à la ligne
-    
+    // Bonne pratique : fermer le scanner
+    clavier.close();
 }//
 }//

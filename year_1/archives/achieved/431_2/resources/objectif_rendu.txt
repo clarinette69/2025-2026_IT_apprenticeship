@@ -1,0 +1,39 @@
+Critères de validation du rapport et TDC
+Completion requirements
+Qualité du document ( Selon les standards vigeur dans l'IT)
+
+Page de garde
+Table des matières (Avec referencement vers les pages)
+Réferencement des sources (codes)
+Annexes
+Réference bibliographiques
+Contenu du document
+
+Organisation du document
+Une documentation est compréhensible et permet de retracer
+
+clairement les activités lorsque les différentes étapes de sa structure
+
+permettent de poursuivre un fil rouge.
+
+Présentation
+La documentation est le reflet du travail pratique. Une excellente
+
+présentation est un signe de clarté et d'opportunisme (tirer le meilleur
+
+parti des circonstances).
+
+Pertinence
+
+Les auteurs du rapport vont droit au but et alimente les réflexions par
+
+des informations pertinentes sans faire du "remplissage" inutile.
+
+Graphiques, images et diagrammes
+Les graphiques, images et diagrammes sont un moyen de rendre des
+
+choses complexes plus claires ou compréhensibles. (Diagramme de flux,
+
+diagrammes de classe, copies d'écran pour les GUI etc.)
+
+Last modified: Monday, 18 August 2025, 11:44 AM

@@ -1,0 +1,33 @@
+Tâche 1
+1. Connecter les PC au SWITCH en utilisant les câbles adaptés
+2. En mode simulation, faire un ping de PC5 à partir de PC1,
+Quelles sont vos constatations?
+______________________________________________
+______________________________________________
+Tâche 2
+Le switch est un équipement dont la configuration peut être modifiée.
+Avant de pouvoir l’utiliser, « il faut lui dire ce qu’il doit faire »
+La configuration du switch se fait utilisant un câble console (bleu) entre
+Le port série RS-232 (COM) du PC et le port console du switch.
+3. Connecter les PC0 au SWITCH en utilisant un câble console
+Question
+Quelle est la configuration du port RS-232 du PC (Bits per second, Data bits, …)
+______________________________________________
+______________________________________________
+Exercice – Configuration de base d’un switch Ethernet Module 117
+Mettre en place l’infrastructure informatique d’une petite entreprise
+2faire ionner avec addresse ip se connecter avec mon addresse ip pas celle de la virtuaél box
+4. Quels sont les connecteurs d’un câble console
+______________________________________________
+______________________________________________
+5. Dans le simulateur, ouvrir une fenêtre Terminal pour configurer le switch
+6. Utiliser la commande Cisco « show running-config » pour visualiser la
+configuration du switch
+7. Utiliser la commande « ? » pour visualiser toutes les commandes disponibles
+dans un switch Cisco
+8. Utiliser la commande « show ? » pour visualiser toutes les commandes qui
+commencent par show
+9. Utiliser la touche TAB pour compléter une commande (par ex : sh <TAB> =>
+show
+Question
+Expliquer le rôle de touches ? et TAB
