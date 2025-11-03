@@ -18,11 +18,11 @@ public class RosesBlanches {
       float reste = montantInitial;
       System.out.println("Livre et Fournitures:"+LivresFournitures+" Frs.-");
 
-      System.out.println("Vous pouvez ensuite acheter: "" Frs.-");800
+      System.out.println("Vous pouvez ensuite acheter: "+800+" Frs.-");
       System.out.println(cafes+" cafés");
       System.out.println(FlashInfo+"numéros du Flah Informatique");
       System.out.println(BilletsMetro+"Billets de métro");
-      System.out.println("Et il vous restera"+reste)" Frs.-";
+      System.out.println("Et il vous restera"+reste+" Frs.-");
       
       clavier.close();
    }

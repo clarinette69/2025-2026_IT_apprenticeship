@@ -1,0 +1,85 @@
+1) La bonne question à se poser
+
+“Je dois remplir toutes les cases d’un tableau 2D.
+Comment éviter d’écrire 6 fois la même chose ?”
+
+Réponse : je repère un schéma qui se répète (les cases changent seulement par leurs indices) → donc j’utilise deux boucles imbriquées (pour les lignes i et les colonnes j).
+
+2) Étapes mentales (recette)
+
+Ce qui change ? → les indices (i, j).
+
+Ce qui reste pareil ? → “demander une valeur” et “la ranger dans y[i][j]”.
+
+Je boucle sur tous les i puis tous les j.
+
+J’affiche un prompt pour aider l’utilisateur…
+
+…puis je lis la valeur (avec Scanner) et je l’affecte à la bonne case.
+
+3) Version “répétitive” (pour comprendre)
+
+Tu aurais pu écrire, sans boucles :
+
+Scanner sc = new Scanner(System.in);
+
+System.out.print("y[0][0] = ");
+y[0][0] = sc.nextInt();
+
+System.out.print("y[0][1] = ");
+y[0][1] = sc.nextInt();
+
+// ... etc. 6 fois
+
+
+Ça marche, mais c’est long et fragile. Observe que seuls les indices changent → parfait pour des boucles.
+
+4) Même idée, mais généralisée (avec boucles)
+Scanner sc = new Scanner(System.in);
+for (int i = 0; i < y.length; i++) {            // lignes
+    for (int j = 0; j < y[i].length; j++) {     // colonnes de CETTE ligne
+        System.out.print("y[" + i + "][" + j + "] = ");
+        y[i][j] = sc.nextInt();                 // ← LECTURE ici
+    }
+}
+
+
+System.out.print(...) = je demande quelque chose.
+
+sc.nextInt() = je lis ce que l’utilisateur tape.
+
+y[i][j] = … = je stocke à la bonne place.
+
+Astuce : toujours utiliser y[i].length (et pas y[0].length) au cas où les lignes n’auraient pas toutes la même taille.
+
+5) Niveau +1 (rendre aussi la taille dynamique)
+
+Pour aller un tout petit cran plus loin : demande à l’utilisateur le nombre de lignes/colonnes.
+
+Scanner sc = new Scanner(System.in);
+
+System.out.print("Nombre de lignes ? ");
+int rows = sc.nextInt();
+System.out.print("Nombre de colonnes ? ");
+int cols = sc.nextInt();
+
+int[][] y = new int[rows][cols];
+
+for (int i = 0; i < y.length; i++) {
+    for (int j = 0; j < y[i].length; j++) {
+        System.out.print("y[" + i + "][" + j + "] = ");
+        y[i][j] = sc.nextInt();
+    }
+}
+
+6) Petit mémo “réflexe” (à garder)
+
+Répétition de code → boucle.
+
+Double dimension → double boucle (lignes puis colonnes).
+
+Message à l’utilisateur → System.out.print(...).
+
+Lecture de ce qu’il tape → Scanner + nextInt().
+
+Toujours penser : Qu’est-ce qui varie ? (indices) Qu’est-ce qui reste ? (action).

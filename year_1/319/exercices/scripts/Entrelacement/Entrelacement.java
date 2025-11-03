@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+class Entrelacement {
+
+    final private static Scanner clavier = new Scanner(System.in);
+    public static void main(String[] args) {
+        int[] tab1 = {1, 7, 6}; //Déclération d'un tableau de o,1,2 => donc 3 sur 3
+        int taille = tab1.length; //Assignation de la  valeure de sa taille dans une variable
+        int[] tab2 = new int[taille]; //Déclaration d'un second tableau de même taille que tab1 (3)
+
+        System.out.println("Saisie du tableau : "); //Affiche le text entre ""
+        // lecture du second tableau
+        for(int i = 0; i < taille; ++i) {//Boucle qui s'arrête quand le conteur est à 2
+            System.out.println("Entrez une valeur pour l'element " + i + " : ");//Demande à l'utilisateur d'entrer un chiffre dans chaqune des case du tableau
+            tab2[i] = clavier.nextInt();
+        }
+
+        // affichage
+        System.out.println("Les tableaux a entrelacer sont : ");
+        for(int i = 0; i < taille; ++i) {
+            System.out.print(tab1[i] + " " );
+        }
+        System.out.println();
+
+        for(int i = 0; i < taille; ++i) {
+            System.out.print(tab2[i] +  " " );
+        }
+        System.out.println();
+
+        /*******************************************
+        * Completez le programme a partir d'ici.
+        *******************************************/
+        // --- 2️⃣ Création d’un entier taille1 = taille(tab1) + taille(tab2) ---
+        int taille1 = tab1.length + tab2.length;
+        // --- 3️⃣ Initialisation de tab3 avec la taille de taille1 ---
+        int [] tab3 = new int [taille1];
+        // --- 4️⃣ Boucle pour remplir tab3 en entrelaçant tab1 et tab2 --- à finir!!!!!
+        for (int i=0;i< taille1-1;i+=2){
+            tab3[i]=tab1[i/2];// place un élément de tab1
+            tab3[i + 1] = tab2[i / 2]; // place un élément de tab2
+        }
+        for (j=0;j< taille1;j+=2){
+
+        }
+
+        
+        /*******************************************
+        * Ne rien modifier apres cette ligne.
+        *******************************************/
+
+    }
+
+}

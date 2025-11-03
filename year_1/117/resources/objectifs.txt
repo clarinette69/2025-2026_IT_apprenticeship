@@ -1,3 +1,5 @@
+Couche 1 et 2
+-----------------------
 Tâche 1
 … connaître les câbles utilisés pour connecter un PC sur un SWITCH
 … citer un avantage du SWITCH par rapport au HUB pour mettre des PC en
@@ -11,3 +13,33 @@ Tâche 2
 … visualiser la configuration d’un switch Cisco avec la commande
  « show running-configuration »
 … utiliser le ? et le tab
+Tâche 3
+… différencier les différents types de câbles réseaux
+… connaître l’utilisation des différents types de câbles réseaux
+… utiliser le simulateur Packet Tracer en mode « RealTime »
+… utiliser le simulateur Packet Tracer en mode « simulation »
+Tâche 4
+… connaître les différents modes d’un port de switch Ethernet
+… connaître les différentes vitesses d’un port de switch Ethernet
+… configure le mode et la vitesse d’un port
+… visualiser le mode et la vitesse choisis par un port en auto
+… visualiser l’adresse MAC d’un équipement
+… visualiser l’adresse MAC d’un port
+Tâche 5
+… découvrir et configurer un point d’accès WLAN simple
+… configurer le SSID
+… configurer le protocole de sécurité WPA2 avec clé partagée
+… configurer la carte WLAN d’un client (laptop ou desktop)
+
+Couche 3
+---------------------
+Tâche 1
+… déterminer la classe d’une adresse IP ou d’un réseau IP
+
+… déterminer le réseau d’une adresse IP
+
+… déterminer les premières et dernières adresses IP utilisable pour des hôtes
+
+… déterminer l’adresse de broadcast d’un réseau IP
+
+… déterminer si un réseau IP est privé ou publique
