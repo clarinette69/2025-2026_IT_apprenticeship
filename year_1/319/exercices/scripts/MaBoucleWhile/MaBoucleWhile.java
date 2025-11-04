@@ -12,13 +12,13 @@ public class MaBoucleWhile {            // Déclaration de la classe
 
         while (i < 10) {                            // Tant que i est strictement inférieur à 10...
             System.out.println("bonjour " + i);     // ...affiche "bonjour" suivi de la valeur actuelle de i
-            // ⚠️ i n'est jamais modifié ici → boucle infinie si i < 10
+            i = i + 1;                              // Mise à jour indispensable pour sortir de la boucle
         }                                           // Fin de la boucle while
 
         // Bonne pratique : penser à fermer le Scanner (non présent dans le code original)
         // clavier.close();
-    // On ferme le Scanner pour libérer les ressources utilisées (bonne pratique en Java)
-    clavier.close();
+        // On ferme le Scanner pour libérer les ressources utilisées (bonne pratique en Java)
+        clavier.close();
     } // Fin de main
 
 } // Fin de classe

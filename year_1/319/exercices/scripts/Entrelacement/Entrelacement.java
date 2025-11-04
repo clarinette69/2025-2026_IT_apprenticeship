@@ -34,14 +34,26 @@ class Entrelacement {
         int taille1 = tab1.length + tab2.length;
         // --- 3️⃣ Initialisation de tab3 avec la taille de taille1 ---
         int [] tab3 = new int [taille1];
-        // --- 4️⃣ Boucle pour remplir tab3 en entrelaçant tab1 et tab2 --- à finir!!!!!
-        for (int i=0;i< taille1-1;i+=2){
-            tab3[i]=tab1[i/2];// place un élément de tab1
-            tab3[i + 1] = tab2[i / 2]; // place un élément de tab2
+        // --- 4️⃣ Boucle pour remplir tab3 en entrelaçant tab1 et tab2 ---
+        int position = 0;
+        int tailleMax = Math.max(tab1.length, tab2.length);
+        for (int i = 0; i < tailleMax; i = i + 1) {
+            if (i < tab1.length) {
+                tab3[position] = tab1[i];
+                position = position + 1;
+            }
+            if (i < tab2.length) {
+                tab3[position] = tab2[i];
+                position = position + 1;
+            }
         }
-        for (j=0;j< taille1;j+=2){
 
+        // --- 5️⃣ Affichage du tableau fusionné ---
+        System.out.println("Tableau entrelacé : ");
+        for (int valeur : tab3) {
+            System.out.print(valeur + " ");
         }
+        System.out.println();
 
         
         /*******************************************

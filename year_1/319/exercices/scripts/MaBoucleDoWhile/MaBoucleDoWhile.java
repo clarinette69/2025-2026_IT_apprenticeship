@@ -12,7 +12,7 @@ public class MaBoucleDoWhile {           // Déclaration de la classe
 
         do {                                      // Démarre une boucle do...while (s'exécute AU MOINS une fois)
             System.out.println("bonjour " + i);   // Affiche "bonjour" + i
-            // ⚠️ i n'est pas modifié → boucle infinie si i < 10
+            i = i + 1;                            // Mise à jour pour avancer vers la sortie de boucle
         } while (i < 10);                         // Condition testée après l'itération
 
         // Bonne pratique : penser à fermer le Scanner (non présent dans le code original)
