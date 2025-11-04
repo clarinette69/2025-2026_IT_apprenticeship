@@ -30,18 +30,29 @@ public class Pret {
          /*******************************************
          * Completez le programme a partir d'ici.
          *******************************************/
-            T = T/100;
-            double cumul = 0.0;
-            double SR=5;
-            int n =0;
+            T = T / 100; // transformation du pourcentage en valeur décimale
+            double cumul = 0.0; // total des intérêts encaissés
+            double SR = S; // capital restant à rembourser
+            int n = 0; // nombre de mois déjà payés
 
-            while(SR>0.0){
-                n= n+1;
-                cumul= cumul+T*SR;
-                SR=SR-R;
-                System.out.println(n+": Somme Restant ="+ SR +"Cumul ="+ cumul);
-            }   
-            System.out.println("Somme des intêrets encaissés :"+ cumul+"(Sur"+n+"mois)");
+            while (SR > 0.0) {
+                double interet = SR * T; // intérêts calculés sur le capital restant
+                cumul = cumul + interet;
+                SR = SR + interet - R; // ajout des intérêts puis retrait du remboursement mensuel
+                n = n + 1;
+
+                if (SR < 0.0) {
+                    SR = 0.0; // aucune somme négative ne doit rester
+                }
+
+                System.out.println(n + ": Somme Restant = " + SR + " Cumul = " + cumul);
+
+                if (R <= interet && SR > 0.0) {
+                    System.out.println("Le remboursement mensuel est insuffisant pour couvrir les intérêts.");
+                    break;
+                }
+            }
+            System.out.println("Somme des intêrets encaissés : " + cumul + " (Sur " + n + " mois)");
             
         /*******************************************
          * Ne rien modifier apres cette ligne.
