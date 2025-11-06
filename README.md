@@ -23,3 +23,10 @@ This is my **all-in-one workspace** for the 2025–2026 academic year, containin
 ---
 
 > *If you’re reading this from the future: yes, this was the year I became unstoppable.*
+
+## 🔄 Quick Git Update Script
+
+Run `python3 pull_latest.py` from the root of the repository to fetch and merge
+the latest changes from `origin/main`. The script checks that you are inside the
+repository, reports missing Git installations, and works anywhere Python is
+available—computer, tablet, or phone.
