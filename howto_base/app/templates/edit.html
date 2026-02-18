@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="post" action="/entries/save" enctype="multipart/form-data" id="entry-form">
+  <input type="hidden" name="entry_id" value="{{ entry.id if entry else 0 }}">
+  <div class="row g-2">
+    <div class="col-md-6"><input name="entity" id="entityInput" class="form-control" placeholder="Entity" required value="{{ entry.entity if entry else '' }}"></div>
+    <div class="col-md-6"><input name="title" class="form-control" placeholder="Title" required value="{{ entry.title if entry else '' }}"></div>
+    <div class="col-md-4"><input name="tags" class="form-control" placeholder="tag1, tag2" value="{{ entry.tags|join(', ') if entry else '' }}"></div>
+    <div class="col-md-4">
+      <select name="category" class="form-select">
+        {% for c in categories %}
+        <option value="{{ c }}" {% if entry and entry.category == c %}selected{% endif %}>{{ c }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="col-md-4"><input name="environment" class="form-control" placeholder="Environment" value="{{ entry.environment if entry else '' }}"></div>
+    <div class="col-12"><textarea name="procedure_markdown" rows="11" class="form-control" placeholder="Write Markdown procedure here">{{ entry.procedure_markdown if entry else '' }}</textarea></div>
+    <div class="col-md-4"><input name="commands" class="form-control" placeholder="command1, command2" value="{{ entry.commands|join(', ') if entry else '' }}"></div>
+    <div class="col-md-4"><input name="contacts" class="form-control" placeholder="contact1@mail" value="{{ entry.contacts|join(', ') if entry else '' }}"></div>
+    <div class="col-md-4"><input name="paths" class="form-control" placeholder="C:\\..." value="{{ entry.paths|join(', ') if entry else '' }}"></div>
+    <div class="col-md-8"><input name="links" class="form-control" placeholder="https://..." value="{{ entry.links|join(', ') if entry else '' }}"></div>
+    <div class="col-md-4"><input type="file" name="screenshot" class="form-control" accept="image/*"></div>
+  </div>
+  <div class="mt-3 d-flex gap-2">
+    <button class="btn btn-primary">Save (Ctrl+S)</button>
+    <a href="/" class="btn btn-secondary">Back</a>
+  </div>
+</form>
+
+<datalist id="entityList"></datalist>
+{% endblock %}
