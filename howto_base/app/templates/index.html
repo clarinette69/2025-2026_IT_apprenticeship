@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="get" action="/" class="mb-3">
+  <div class="input-group input-group-lg">
+    <input id="global-search" name="q" class="form-control" placeholder="Search procedures..." value="{{ q }}" autofocus>
+    <select name="category" class="form-select" style="max-width:220px;">
+      {% for c in categories %}
+        <option value="{{ c }}" {% if category == c %}selected{% endif %}>{{ c }}</option>
+      {% endfor %}
+    </select>
+    <button class="btn btn-primary">Search</button>
+  </div>
+  {% if expanded_terms %}<small class="text-muted">Expanded terms: {{ expanded_terms|join(', ') }}</small>{% endif %}
+</form>
+
+<div class="row">
+  <div class="col-md-8">
+    {% if q and not results %}
+      <div class="alert alert-warning">No result found. Suggestions: {{ suggestions|join(', ') }}</div>
+    {% endif %}
+    {% for r in results %}
+      <div class="card mb-2">
+        <div class="card-body">
+          <h5><a href="/entries/{{ r.id }}">{{ r.title }}</a></h5>
+          <div><span class="badge bg-secondary">{{ r.entity }}</span> <span class="badge bg-info text-dark">{{ r.category }}</span></div>
+          <p class="mt-2">{{ r.snippet|safe }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-body">
+        <h6>Quick Capture</h6>
+        <textarea id="rawCapture" class="form-control mb-2" rows="8" placeholder="Paste raw notes here"></textarea>
+        <button class="btn btn-outline-primary btn-sm" onclick="runStructure()">Structure</button>
+        <pre id="captureResult" class="mt-2 small"></pre>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+printer:
+  - imprimante
+  - print
+vpn:
+  - reseau-prive
+  - virtual-private-network
+password:
+  - motdepasse
+mail:
+  - email
+  - outlook
+wifi:
+  - wi-fi
+  - wireless
+lockout:
+  - blocked-account
